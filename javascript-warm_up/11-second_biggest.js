@@ -7,8 +7,7 @@ function secBig (a, b) {
 const a = process.argv.slice(2);
 let max = 0;
 if (process.argv.length > 3) {
-    a.sort(secBig);
-    max = Number(a[a.length - 2]);
-  }
-  console.log(max);
-  
+  a.sort(secBig);
+  max = Number(a[a.length - 2]);
+}
+console.log(max);
