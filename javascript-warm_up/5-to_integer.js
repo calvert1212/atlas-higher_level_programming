@@ -1,3 +1,8 @@
 #!/usr/bin/node
-// Prints 3 lines, C is fun, Python is cool, JavaScript is amazing
-console.log('C is fun\nPython is cool\nJavaScript is amazing');
+// Prints a number followed by first arg if can be an int
+const xnum = parseInt(process.argv[3]);
+if (isNaN(xnum)) {
+  console.log('Not a number')
+} else {
+  console.log('My number: ' + (xnum));
+}
