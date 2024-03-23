@@ -1,3 +1,7 @@
 #!/usr/bin/node
-// Prints 3 lines, C is fun, Python is cool, JavaScript is amazing
-console.log('C is fun\nPython is cool\nJavaScript is amazing');
+// Prints first arg passed, if none "none"
+if(process.argv0) {
+  console.log(process.argv0);
+} else {
+  console.log('No argument');
+}
