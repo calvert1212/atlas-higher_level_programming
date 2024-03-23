@@ -1,8 +1,9 @@
 #!/usr/bin/node
-// Prints a number followed by first arg if can be an int
+// Prints a message a number of times based on first arg
 const xnum = parseInt(process.argv[2]);
 if (isNaN(xnum)) {
-  console.log('Not a number');
+  console.log('Missing number of occurences');
 } else {
-  console.log('My number: ' + (xnum));
+    for (let i = 0; i < xnum; i++)
+      console.log('C is fun');
 }
