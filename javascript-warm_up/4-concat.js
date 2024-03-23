@@ -1,3 +1,3 @@
 #!/usr/bin/node
-// Prints 3 lines, C is fun, Python is cool, JavaScript is amazing
-console.log('C is fun\nPython is cool\nJavaScript is amazing');
+// Prints two args seperated by " is "
+console.log((process.argv[2]) + " is " + (process.argv[3]));
