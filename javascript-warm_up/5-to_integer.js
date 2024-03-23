@@ -1,10 +1,10 @@
 #!/usr/bin/node
 // Prints a message a number of times based on first arg
 const xnum = process.argv[2];
-if (isNaN(xnum)) {
-  console.log('Missing number of occurences');
-} else {
-    for (let i = xnum; i > 0; i--) {
+for (let i = xnum; i > 0; i--) {
+  if (isNaN(xnum)) {
+    console.log('Missing number of occurences');
+    } else {
       console.log('C is fun');
     }
 }
