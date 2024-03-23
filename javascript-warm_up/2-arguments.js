@@ -4,6 +4,6 @@ if (arguments.length < 1){
 console.log('No argument');
 } else if (arguments.length < 2){
     console.log('Argument found');
-} else {
+} else if (arguments.length <= 2) {
     console.log('Arguments found');
 }
