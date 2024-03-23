@@ -4,7 +4,7 @@ function secBig (a, b) {
   return a - b;
 }
 
-const arr = process.argv.slice(2);
+const a = process.argv.slice(2);
 let max = 0;
 if (process.argv.length > 3) {
     a.sort(sortNumber);
