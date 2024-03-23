@@ -10,5 +10,5 @@ if (process.argv.length > 3) {
     a.sort(secBig);
     max = Number(a[a.length - 2]);
   }
-  console.log(maxNumber);
+  console.log(max);
   
