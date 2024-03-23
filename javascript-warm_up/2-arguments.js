@@ -3,7 +3,7 @@
 function printArgs(args) {
 const aleng = process.argv.length - 2;
 
-if (aleng === 0) {
+if (aleng < 1) {
     console.log('No arguments');
 } else if (aleng === 1) {
     console.log('Argument found');
