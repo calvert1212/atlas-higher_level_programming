@@ -1,3 +1,9 @@
 #!/usr/bin/node
-// Prints 3 lines, C is fun, Python is cool, JavaScript is amazing
-console.log('C is fun\nPython is cool\nJavaScript is amazing');
+// Prints message based on number of args
+if (args.length < 1){
+console.log('No argument');
+} else if (args.length < 2){
+    console.log('Argument found');
+} else {
+    console.log('Arguments found');
+}
