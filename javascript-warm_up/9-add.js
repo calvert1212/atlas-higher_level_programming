@@ -3,7 +3,7 @@
 const a = parseInt(process.argv[2]),b = parseInt(process.argv[3]);
 function add(a, b) {
   let c = a + b;
-  console.log(c);
+  console.log(parseInt(c));
 }
 
 add();
