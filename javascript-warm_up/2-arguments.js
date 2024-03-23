@@ -1,9 +1,10 @@
 #!/usr/bin/node
 // Prints message based on number of args
-if (arguments.length < 1){
+const alen = arguments.length;
+if (alen < 1){
 console.log('No argument');
-} else if (arguments.length < 2){
+} else if (alen < 2){
     console.log('Argument found');
-} else if (arguments.length <= 2) {
+} else if (alen <= 2) {
     console.log('Arguments found');
 }
