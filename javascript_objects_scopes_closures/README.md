@@ -1,0 +1,1 @@
+Learning about JavaScript objects, scopes and closures!
