@@ -1,14 +1,14 @@
 #!/usr/bin/node
 // Prints message based on number of args
 function printArgs(args) {
-const aleng = arguments.length;
+const aleng = process.argv.length - 2;
 
 if (aleng === 0) {
-    console.log("No arguments");
+    console.log('No arguments');
 } else if (aleng === 1) {
-    console.log("Argument found");
+    console.log('Argument found');
 } else {
-    console.log("Arguments found");
+    console.log('Arguments found');
 }
 }
 
