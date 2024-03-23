@@ -1,6 +1,8 @@
 #!/usr/bin/node
 // Prints 3 lines, C is fun, Python is cool, JavaScript is amazing
-const a = parseInt(process.argv[2]),b = parseInt(process.argv[3]);
-function add(a, b){
-    console.log(a + b);
+function add(a, b) {
+  const a = parseInt(process.argv[2]),b = parseInt(process.argv[3]);
+  console.log(a + b);
 }
+
+add();
