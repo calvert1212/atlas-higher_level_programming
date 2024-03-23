@@ -6,5 +6,5 @@ if (aleng < 1) {
 } else if (aleng < 2) {
   console.log('Argument found');
 } else {
-    console.log('Arguments found');
+  console.log('Arguments found');
 }
