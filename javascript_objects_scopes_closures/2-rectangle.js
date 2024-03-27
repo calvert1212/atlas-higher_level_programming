@@ -3,8 +3,8 @@
 class Rectangle {
   constructor(w, h) {
     if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
-      let emptyRect = new Rectangle();
-      return emptyRect;
+      this.width = NULL;
+      this.height = NULL;
     }
     this.width = w;
     this.height = h;
