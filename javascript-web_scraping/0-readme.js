@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//Reads the contents of a file
+// Reads the contents of a file
 
 const fServer = require('fs');
 const file = process.argv[2];
