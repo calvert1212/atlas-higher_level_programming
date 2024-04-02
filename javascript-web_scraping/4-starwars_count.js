@@ -11,6 +11,6 @@ request(mId, function (error, response, body) {
   } else {
     const fD = JSON.parse(body);
     const w = fD.results.filter(film => film.characters.includes(wF));
-    console.log(w);
+    console.log(w.length);
   }
 });
