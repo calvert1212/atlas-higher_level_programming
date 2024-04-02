@@ -6,13 +6,10 @@ const mId = process.argv[2];
 const site = 'https://swapi-api.hbtn.io/api/films/' + mId;
 const wF = 'https://swapi-api.hbtn.io/api/people/18/';
 
-request(site, function (error, _response, body) {
-  if (!mId) {
-    process.exit(1);
-  }
-  if (error) {
+request(site, function (error, response, body) {
+  if (!mId || error) {
     console.error(error);
-  } else {
+   } else {
     const fD = JSON.parse(body);
     const w = fD.results.filter(film => film.characters.includes(wF));
     console.log(w);
