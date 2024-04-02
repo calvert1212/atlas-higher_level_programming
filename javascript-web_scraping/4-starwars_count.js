@@ -4,7 +4,6 @@
 const request = require('request');
 const mId = process.argv[2];
 const site = 'https://swapi-api.hbtn.io/api/films/' + mId;
-const gW = require('results.filter');
 const wF = 'https://swapi-api.hbtn.io/api/people/18/';
 
 request(site, function (error, _response, body) {
@@ -15,7 +14,7 @@ request(site, function (error, _response, body) {
     console.error(error);
   } else {
     const fD = JSON.parse(body);
-    const w = fD(gW)(film => film.characters.includes(wF));
+    const w = fD.results.filter(film => film.characters.includes(wF));
     console.log(w);
   }
 });
